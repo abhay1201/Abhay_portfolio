@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Abhay kumar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Abhay kumar</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Interests" onclick="toggleMenu()">Interests</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+
+        </div>
+    </nav>
+    <section id="home">
+        <div class="section__pic-container">
+            <img src="./abhay2.jpg" alt="Abhay profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Abhay Kumar</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./will be uploaded soon')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abhay-kumar-968155218'" />
+                <img src="./github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/abhay1201'" />
+            </div>
+        </div>
+    </section>
+  
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="text-container">
+            <h2>I'm Abhay</h2>
+            <p>
+                Hello folks! I am an undergraduate student at <b>IIT ROORKEE</b>, pursuing my <b> B.Tech degree in Electrical Engineering Department </b>. I belong to West Champaran, Bihar. My hobbies include photography and videography, and playing cricket.
+                <p>I am keenly interested in Data Structures and Algorithms, competitive programming, web development, and UI & UX Design. I like learning new skills.</p>
+            </p>
+        </div>
+        <div class="section__pic-container">
+            <img src="./about.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+    </div>
+</section>
+
+
+<section id="Interests">
+  <h1 class="title12">My Interests</h1>
+  <div class="interests-container">
+      <div class="interest">
+          <button class="btn-btn-color-3">Web Development</button>
+          <div class="progress">
+              <div class="progress-bar" style="width: 70%;">70%</div>
+          </div>
+      </div>
+      <div class="interest">
+          <button class="btn-btn-color-3">Data Structures & Algorithms</button>
+          <div class="progress">
+              <div class="progress-bar" style="width: 80%;">80%</div>
+          </div>
+      </div>
+      <div class="interest">
+          <button class="btn-btn-color-3">Competitive Programming</button>
+          <div class="progress">
+              <div class="progress-bar" style="width: 60%;">60%</div>
+          </div>
+      </div>
+      <div class="interest">
+          <button class="btn-btn-color-3">AI/ML</button>
+          <div class="progress">
+              <div class="progress-bar" style="width: 50%;">50%</div>
+          </div>
+      </div>
+      <div class="interest">
+          <button class="btn-btn-color-3">Photography and Videography</button>
+          <div class="progress">
+              <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+     
+
+<section id="projects">
+  <h1 class="title12">My Works</h1>
+  <div class="projects-container">
+      <div class="project">
+          <h2>Project 1</h2>
+          <img src="pf.jpg" alt="Project 1 Image" class="project-img">
+          <p>will be updated soon.</p>
+          <button class="btn-project" onclick="location.href='https://liveproject1.com'">Live Project</button>
+      </div>
+      <div class="project">
+          <h2>Project 2</h2>
+          <img src="calci.png" alt="Project 2 Image" class="project-img">
+          <p>calculator </p>
+          <button class="btn-project" onclick="location.href='https://adv-calculator.netlify.app/'">Live Project</button>
+      </div>
+      <div class="project">
+          <h2>Project 3</h2>
+          <img src="tripage.png" alt="Project 3 Image" class="project-img">
+          <p>will be updated soon.</p>
+          <button class="btn-project" onclick="location.href='https://liveproject3.com'">Live Project</button>
+      </div>
+  </div>
+</section>
+<footer id="contacts">
+  <h2 class="title23">Contact Me</h2>
+  <div class="socials-container">
+      <a href="https://https://x.com/Abhaykumar1201" target="_blank">
+          <img src="./twitter.webp" alt="twitter Profile" class="icon">
+      </a>
+      <a href="https://www.instagram.com/staggered_abhay" target="_blank">
+          <img src="./Instagram_logo_2022.svg.webp" alt="Instagram Profile" class="icon">
+      </a>
+      <a href="mail me:abhayaditya327@gmail.com" target="_blank">
+          <img src="./gmail.jpg" alt="Email" class="icon">
+      </a>
+  </div>
+</footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
